@@ -1,4 +1,4 @@
-# go-interpreter
+# cherry
 Interpreter for lightweight programming language
 
 ## Information
