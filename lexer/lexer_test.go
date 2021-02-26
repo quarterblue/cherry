@@ -3,7 +3,7 @@ package lexer
 import (
 	"testing"
 
-	"github.com/quarterblue/go-interpreter/token"
+	"github.com/quarterblue/cherry/token"
 )
 
 func TestNextToken(t *testing.T) {

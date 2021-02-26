@@ -1,7 +1,7 @@
 package lexer
 
 import (
-	"github.com/quarterblue/go-interpreter/token"
+	"github.com/quarterblue/cherry/token"
 )
 
 type Lexer struct {

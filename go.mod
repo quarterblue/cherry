@@ -1,3 +1,3 @@
-module github.com/quarterblue/go-interpreter
+module github.com/quarterblue/cherry
 
 go 1.15
