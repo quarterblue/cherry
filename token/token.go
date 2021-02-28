@@ -2,18 +2,19 @@ package token
 
 type TokenType string
 
+// Token For simplicity, using strings as literal
 type Token struct {
 	Type    TokenType
 	Literal string
 }
 
 const (
-	// Illegal
-	ILLEGAL = "ILLEGAL" //
-	EOF     = "EOF"
+	// ILLEGAL
+	ILLEGAL = "ILLEGAL"
+	EOF     = "EOF" //
 
-	INDENT = "INDENT"
-	INT    = "INT"
+	IDENT = "IDENT"
+	INT   = "INT"
 
 	// Operators
 	ASSIGN = "="
@@ -29,7 +30,6 @@ const (
 	RBRACE = "}"
 
 	// Keywords
-
 	FUNCTION = "FUNCTION"
 	LET      = "LET"
 )
@@ -39,9 +39,9 @@ var keywords = map[string]TokenType{
 	"let": LET,
 }
 
-// func LookupIdent(ident string) TokenType {
-// 	if tok, ok := keywords[ident]; ok {
-// 		return tok
-// 	}
-// 	return IDENT
-// }
+func LookupIdent(ident string) TokenType {
+	if tok, ok := keywords[ident]; ok {
+		return tok
+	}
+	return IDENT
+}
